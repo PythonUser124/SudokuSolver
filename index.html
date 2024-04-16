@@ -1,0 +1,58 @@
+<html>
+    <style>
+        body {
+        text-align: center;
+        }
+    </style>
+    <body>
+        <h1> Welcome to the Sudoku Solver</h1>
+        <p>By: Shreyas Illindala</p>
+        <label>Please enter the numbers in each input respectively to its row. Enter a 0 for an empty space</label>
+        <br><br>
+        <label>Row 1:</label>
+        <input id="r1" type="number">
+        <br><br>
+        <label>Row 2:</label>
+        <input id="r2">
+        <br><br>
+        <label>Row 3:</label>
+        <input id="r3">
+        <br><br>
+        <label>Row 4:</label>
+        <input id="r4">
+        <br><br>
+        <label>Row 5:</label>
+        <input id="r5">
+        <br><br>
+        <label>Row 6:</label>
+        <input id="r6">
+        <br><br>
+        <label>Row 7:</label>
+        <input id="r7">
+        <br><br>
+        <label>Row 8:</label>
+        <input id="r8">
+        <br><br>
+        <label>Row 9:</label>
+        <input id="r9">
+        <br><br>
+        <button onclick="submit()">Submit</button>
+        <div id="test"></div>
+    </body>
+    <script>
+    row1 = {};
+    row2 = {};
+    row3 = {};
+    row4 = {};
+    row5 = {};
+    row6 = {};
+    row7 = {};
+    row8 = {};
+    row9 = {};
+    
+        function submit() {
+            row1=getElementById("row1").value;
+            document.getElementById("test").innerHTML = row1;
+        }
+    </script>
+</html>
