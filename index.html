@@ -1,58 +1,71 @@
+<!DOCTYPE html>
 <html>
+<head>
     <style>
         body {
-        text-align: center;
+            text-align: center;
         }
     </style>
-    <body>
-        <h1> Welcome to the Sudoku Solver</h1>
-        <p>By: Shreyas Illindala</p>
-        <label>Please enter the numbers in each input respectively to its row. Enter a 0 for an empty space</label>
-        <br><br>
-        <label>Row 1:</label>
-        <input id="r1" type="number">
-        <br><br>
-        <label>Row 2:</label>
-        <input id="r2">
-        <br><br>
-        <label>Row 3:</label>
-        <input id="r3">
-        <br><br>
-        <label>Row 4:</label>
-        <input id="r4">
-        <br><br>
-        <label>Row 5:</label>
-        <input id="r5">
-        <br><br>
-        <label>Row 6:</label>
-        <input id="r6">
-        <br><br>
-        <label>Row 7:</label>
-        <input id="r7">
-        <br><br>
-        <label>Row 8:</label>
-        <input id="r8">
-        <br><br>
-        <label>Row 9:</label>
-        <input id="r9">
-        <br><br>
-        <button onclick="submit()">Submit</button>
-        <div id="test"></div>
-    </body>
+</head>
+<body>
+    <h1>Welcome to the Sudoku Solver</h1>
+    <p>By: Shreyas Illindala</p>
+    <label>Please enter the numbers in each input respectively to its row. Enter a 0 for an empty space</label>
+    <br><br>
+    <label>Row 1:</label>
+    <input id="r1" type="number">
+    <br><br>
+    <label>Row 2:</label>
+    <input id="r2" type="number">
+    <br><br>
+    <label>Row 3:</label>
+    <input id="r3" type="number">
+    <br><br>
+    <label>Row 4:</label>
+    <input id="r4" type="number">
+    <br><br>
+    <label>Row 5:</label>
+    <input id="r5" type="number">
+    <br><br>
+    <label>Row 6:</label>
+    <input id="r6" type="number">
+    <br><br>
+    <label>Row 7:</label>
+    <input id="r7" type="number">
+    <br><br>
+    <label>Row 8:</label>
+    <input id="r8" type="number">
+    <br><br>
+    <label>Row 9:</label>
+    <input id="r9" type="number">
+    <br><br>
+    <button onclick="submit()">Submit</button>
+    <div id="test"></div>
+
     <script>
-    row1 = {};
-    row2 = {};
-    row3 = {};
-    row4 = {};
-    row5 = {};
-    row6 = {};
-    row7 = {};
-    row8 = {};
-    row9 = {};
-    
         function submit() {
-            row1=getElementById("row1").value;
-            document.getElementById("test").innerHTML = row1;
+            var row1 = document.getElementById("r1").value;
+            var row2 = document.getElementById("r2").value;
+            var row3 = document.getElementById("r3").value;
+            var row4 = document.getElementById("r4").value;
+            var row5 = document.getElementById("r5").value;
+            var row6 = document.getElementById("r6").value;
+            var row7 = document.getElementById("r7").value;
+            var row8 = document.getElementById("r8").value;
+            var row9 = document.getElementById("r9").value;
+
+            var output = "Row 1: " + row1 + "<br>" +
+                         "Row 2: " + row2 + "<br>" +
+                         "Row 3: " + row3 + "<br>" +
+                         "Row 4: " + row4 + "<br>" +
+                         "Row 5: " + row5 + "<br>" +
+                         "Row 6: " + row6 + "<br>" +
+                         "Row 7: " + row7 + "<br>" +
+                         "Row 8: " + row8 + "<br>" +
+                         "Row 9: " + row9;
+
+            document.getElementById("test").innerHTML = output;
         }
     </script>
+</body>
 </html>
